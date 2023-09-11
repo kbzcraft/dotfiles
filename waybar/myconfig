@@ -32,9 +32,10 @@
     // Modules Left
     "modules-left": [
         "custom/appmenu",
-        "wlr/taskbar",
         "group/quicklinks",
-        "hyprland/window"
+        "wlr/taskbar",
+        "hyprland/window",
+        
     ],
 
     // Modules Center
@@ -50,9 +51,9 @@
         "bluetooth",
         "battery", 
         "group/hardware",
-        "custom/exit",
         "network",
-        "clock"
+        "clock",
+        "custom/exit"
     ],
 
     // Group Quicklinks
@@ -60,7 +61,7 @@
         "orientation": "horizontal",
         "modules": [
             "custom/chatgpt",
-            "custom/lookingglass"
+            "custom/google-chrome-stable"
          ]
     },
 

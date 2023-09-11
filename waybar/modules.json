@@ -47,9 +47,9 @@
     // Hyprland Window
     "hyprland/window": {
         "rewrite": {
-            "(.*) - Brave": "$1",
+            "(.*) - google-chrome-stable": "$1",
             "(.*) - Chromium": "$1",
-            "(.*) - Brave Search": "$1",
+            "(.*) - google-chrome-stable Search": "$1",
             "(.*) - Outlook": "$1",
             "(.*) Microsoft Teams": "$1"
         },
@@ -61,8 +61,8 @@
         "format": " {}",
         "exec": "python ~/private/youtube.py",
         "restart-interval": 600,
-        "on-click": "brave https://studio.youtube.com",
-        "tooltip": false
+        "on-click": "google-chrome-stable https://studio.youtube.com",
+        "tooltip": true
     },
 
     // Updates Count
@@ -70,15 +70,15 @@
         "format": " {}",
         "exec": "~/dotfiles/scripts/updates.sh",
         "restart-interval": 600,
-        "on-click": "alacritty -e yay",
+        "on-click": "alacritty",
         "tooltip": false
     },
 
     // Outlook Launcher
     "custom/outlook": {
         "format": "",
-        "on-click": "brave --app=https://outlook.office.com/mail/",
-        "tooltip": false
+        "on-click": "google-chrome-stable --app=https://outlook.office.com/mail/",
+        "tooltip": true
     },
 
     // Teams Launcher
@@ -88,17 +88,17 @@
         "tooltip": false
     },
 
-    // Brave Launcher
-    "custom/brave": {
+    // google-chrome-stable Launcher
+    "custom/google-chrome-stable": {
         "format": "",
-        "on-click": "brave",
+        "on-click": "google-chrome-stable",
         "tooltip": false
     },
 
     // ChatGPT Launcher
     "custom/chatgpt": {
         "format": "",
-        "on-click": "brave --app=https://chat.openai.com",
+        "on-click": "google-chrome-stable --app=https://chat.openai.com/",
         "tooltip": false
     },
 

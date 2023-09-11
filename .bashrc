@@ -90,7 +90,8 @@ alias kil-AI='cd ~/Deb/Kil-AI/'
 alias kil='kil-AI && act'
 alias vkil='kil && nvim'
 
-
+alias el='conda activate el_env'
+alias vel='conda activate el_env && nvim ~/el/ '
 # SYSTEM
 
 alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
@@ -103,6 +104,11 @@ alias res1='xrandr --output DisplayPort-0 --mode 2560x1440 --rate 120'
 alias res2='xrandr --output DisplayPort-0 --mode 1920x1080 --rate 120'
 alias r1='hyprctl keyword monitor ,preferred,auto,1'
 alias r2='hyprctl keyword monitor ,1920x1080,auto,1'
+
+# BROWSER LINKS
+alias chrome="google-chrome-stable"
+alias chatgpt="google-chrome-stable --app=https://chat.openai.com"
+alias whatsapp="google-chrome-stable https://web.whatsapp.com"
 
 ### PATH EXPORTS --------------------------------------
 export PATH="/usr/lib/ccache/bin/:$PATH"
@@ -122,3 +128,20 @@ cat ~/.cache/wal/sequences
 # -----------------------------------------------------
 echo ""
 pfetch
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/kb/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/kb/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/kb/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/kb/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+export PATH="/home/kb/anaconda3/bin:$PATH"
+
