@@ -77,8 +77,7 @@ packagesPacman=(
     "picom" 
     "alacritty" 
     "rofi" 
-    "rofi-calc" 
-    "chromium" 
+    "rofi-calc"  
     "scrot" 
     "nitrogen" 
     "dunst" 
@@ -112,10 +111,10 @@ packagesPacman=(
 );
 
 packagesYay=(
-    "brave-bin" 
     "pfetch" 
     "bibata-cursor-theme" 
     "trizen"
+    "google-chrome-stable"
 );
   
 # ------------------------------------------------------
