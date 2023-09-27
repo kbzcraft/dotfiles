@@ -86,12 +86,18 @@ alias notes='vim ~/notes.txt'
 
 #Dir Shortcuts
 
-alias kil-AI='cd ~/Deb/Kil-AI/'
-alias kil='kil-AI && act'
-alias vkil='kil && nvim'
+#alias kil-AI='cd ~/Deb/Kil-AI/'
+#alias kil='kil-AI && act'
+#alias vkil='kil && nvim'
 
-alias el='conda activate el_env'
-alias vel='conda activate el_env && nvim ~/el/ '
+#alias el='conda activate el_env'
+#alias vel='conda activate el_env && nvim ~/el/ '
+sysAlias="$HOME/.alias.sh"
+
+if [ -f "$sysAlias" ]; then
+  source "$sysAlias"
+fi
+
 # SYSTEM
 
 alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
